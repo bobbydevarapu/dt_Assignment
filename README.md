@@ -115,5 +115,3 @@ See the included examples:
 This project is provided as-is for educational purposes. Tell me if you want a license added (MIT, Apache-2.0, etc.).
 
 ---
-
-If you'd like any wording changed or extra sections (contributing, CI), tell me which and I'll update the README.
