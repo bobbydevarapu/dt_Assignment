@@ -1,4 +1,4 @@
-DT Assignment — Web Scraper
+**DT Assignment — Web Scraper**
 
 Overview
 
