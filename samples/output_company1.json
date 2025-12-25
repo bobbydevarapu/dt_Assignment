@@ -1,0 +1,88 @@
+{
+    "identity": {
+        "company_name": "Freshworks: Uncomplicated Software | IT Service, Customer Service",
+        "website_url": "https://freshworks.com",
+        "tagline": "Freshworks enterprise-grade solutions are powerful, yet easy to use, and quick to deliver results for customer service and IT teams"
+    },
+    "business_summary": {
+        "offerings": [
+            "Products",
+            "Platform",
+            "Resources",
+            "Pricing",
+            "Demo",
+            "Languages",
+            "Login",
+            "Try it free",
+            "About",
+            "Leadership",
+            "Investors",
+            "Careers",
+            "Customers",
+            "Partners",
+            "Events",
+            "Insights & Trends",
+            "Newsroom",
+            "Contact",
+            "Support",
+            "Training & Certification",
+            "Services",
+            "Student Academy",
+            "Community",
+            "What\u2019s New",
+            "Freshdesk",
+            "Freshdesk Omni",
+            "Freshchat",
+            "Freshservice",
+            "Freshservice for MSPs",
+            "Freshservice for Business Teams",
+            "Freshsales",
+            "Freshsales Suite",
+            "Freshmarketer",
+            "Freshworks Platform",
+            "Freddy AI",
+            "Legal",
+            "Privacy Notice",
+            "Site Terms",
+            "Cookie Policy",
+            "Do Not Share My Personal Information",
+            "Security",
+            "Accessibility",
+            "Unsubscribe",
+            "Sitemap"
+        ]
+    },
+    "evidence": {
+        "social_links": {
+            "linkedin": "https://linkedin.com/company/freshworks-inc",
+            "twitter": "https://twitter.com/freshworksinc",
+            "instagram": null,
+            "youtube": "https://www.youtube.com/c/freshworksinc",
+            "facebook": "https://www.facebook.com/freshworksinc"
+        },
+        "key_pages": {
+            "about": null,
+            "products": null,
+            "services": null,
+            "industries": null,
+            "pricing": null,
+            "careers": null,
+            "contact": null
+        }
+    },
+    "contact_location": {
+        "emails": [
+            "sales@freshworks.com"
+        ],
+        "phones": []
+    },
+    "team_hiring": {},
+    "metadata": {
+        "timestamp": "2025-12-25T06:11:39.606800",
+        "pages_crawled": [
+            "https://freshworks.com",
+            "https://freshworks.com#main-content"
+        ],
+        "errors": []
+    }
+}
