@@ -39,43 +39,81 @@ How to Run
 ```bash
 pip install requests beautifulsoup4
 ```
+# DT Assignment — Web Scraper
 
-2. Run the scraper
+A small, dependency-light web scraper that extracts structured company information from publicly accessible websites and saves the results as JSON.
+
+## Features
+
+- Extracts page identity (title, meta description)
+- Discovers internal links and identifies common pages (About, Products, Contact, Careers)
+- Collects social media links, emails, and phone numbers from visible text
+- Captures product/offerings listed in `<li>` items
+- Detects and logs likely JS-rendered pages (no JS execution)
+- Produces a single structured JSON output per run
+
+## Requirements
+
+- Python 3.8+
+- pip
+
+Recommended packages (install below): `requests`, `beautifulsoup4`
+
+## Installation
+
+Create a virtual environment (optional) and install dependencies:
+
+```bash
+python -m venv .venv
+source .venv/Scripts/activate    # Windows: .venv\Scripts\activate
+pip install -r requirements.txt  # or: pip install requests beautifulsoup4
+```
+
+If you prefer not to use a requirements file, run:
+
+```bash
+pip install requests beautifulsoup4
+```
+
+## Usage
+
+Run the scraper and follow the prompt to enter a target URL:
 
 ```bash
 python scraper.py
 ```
 
-3. Enter the website URL when prompted (example: `https://freshworks.com`)
+The script will crawl a limited number of internal pages (keeps runs small and safe) and write a JSON file with the structured result. Example outputs are available in the `samples/` folder.
 
-4. After completion, `output.json` appears in the project folder. Example sample outputs are provided in the `samples/` folder.
+## Sample outputs
 
-Sample Outputs
+See the included examples:
 
-Two example outputs are included to demonstrate scraper results:
+- `samples/output_company1.json`
+- `samples/output_company2.json`
 
-- `samples/output_company1.json` — Freshworks example
-- `samples/output_company2.json` — HubSpot example
+## Limitations
 
-Limitations (Honest System Behavior)
+- The scraper does not execute JavaScript. Pages that require client-side rendering may return limited content.
+- No authentication or login flows are followed.
+- Intended for small, ethical crawls only.
 
-- JS-heavy sites may return minimal HTML. The scraper logs: "JS-rendered site — minimal HTML returned" when this is detected.
-- No Selenium or headless browser is used — this keeps the tool lightweight but limits rendering of JS-driven content.
-- Only publicly reachable pages are scanned; private or authenticated content is ignored.
-
-Files Included
+## Files
 
 - `scraper.py` — main scraper script
-- `README.md` — this documentation
-- `samples/` — sample output JSON files
+- `samples/` — example JSON outputs
+- `.gitignore` — ignored files
 
-Notes
+## Next steps I can do for you
 
-This tool is intended for small, honest crawls for educational or assessment purposes. If you need full JS rendering, consider a separate headless-browser solution.
+- Run the scraper on a target URL and include the generated `output.json` in `samples/`
+- Add a `requirements.txt` and small test harness to validate output structure
+- Create a GitHub repo and push this project (if you give me the repo name or allow me to use `gh`)
 
-If you'd like, I can also:
+## License & Contact
 
-- run the scraper on a target URL and produce `output.json`
-- add a small test harness to validate output structure
+This project is provided as-is for educational purposes. Tell me if you want a license added (MIT, Apache-2.0, etc.).
 
-Happy to proceed with any of the above.
+---
+
+If you'd like any wording changed or extra sections (contributing, CI), tell me which and I'll update the README.
